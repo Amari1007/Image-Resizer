@@ -1,8 +1,10 @@
 #Image Resizer
-Created using Electron Js
+
+Created using Electron JS
 
 ##Dependancies
-Install all dependencies in package.json
+
+Install all dependencies listed in package.json
 
 ##Distribution
-To package run ``` npm run make
+To package app run ```bash npm run make```
