@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <div class="flex flex-col bg-gray-50 h-screen text-black">
+        <header class="p-4">
+            <h1 class="text-5xl font-light">ElectronJS</h1>
+        </header>
+
+        <div class="flex justify-center mx-auto bg-teal-600 w-44">
+            <label class="border-2 text-center font-medium text-white border-none outline-none">
+                <img src="img/maximize-button.png" class="h-30">
+                <span>Select an Image</span>
+                <input id="img" type="file" class="hidden">
+            </label>
+        </div>
+
+        <div class="m-10 justify-center mx-auto border-0 w-80">
+            <p>
+                <span id="fileName">File name</span>
+                <span id="fileSize" class="text-gray-500">(File size MB)</span>
+                <span id="fileType" class="text-gray-500">(File type)</span>
+            </p>
+            <form class="flex flex-col p-4" id="form">
+                <label for="imgWidth">Width: </label>
+                <input type="number" class="border-teal-600 border-2 rounded-xs outline-none p-2" id="imgWidth" min="1" step="1">
+                <label for="imgHeight">Height: </label>
+                <input type="number" class="border-teal-600 border-2 rounded-xs outline-none p-2" id="imgHeight" min="1" step="1">
+                <input type="submit" class="bg-teal-600 text-white font-bold outline-none p-2 mb-2 mt-4" value="Resize" id="resize">
+                <input type="reset" class="bg-teal-600 text-white font-bold outline-none p-2" id="reset">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="renderer.js" defer></script>
+</html>
